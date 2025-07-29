@@ -70,7 +70,7 @@ def parser_resume(file_path: str, static_info: dict = None):
                 logger.info(f"Merging static info: {static_info}")
                 parsed_data.update(static_info)
 
-            logger.into(f"Resume parsing complete for file {file_path}")
+            logger.info(f"Resume parsing complete for file {file_path}")
             return parsed_data
         
     except (InvalidFileFormatError, ResumeParsingError) as e:
