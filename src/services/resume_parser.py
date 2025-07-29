@@ -16,7 +16,7 @@ def is_allowed_file(filename):
     _, ext = os.path.splitext(filename)
     return ext.lower() in ALLOWED_EXTENSIONS
 
-def parser_resume(file_path: str, static_info: dict = None):
+def parse_resume(file_path: str, static_info: dict = None):
     """
     Extract structured resume information from a PDF or DOCX file.
     Uses pyresparser; falls back to pdfplumber for raw PDFs.
