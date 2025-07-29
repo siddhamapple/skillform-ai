@@ -2,8 +2,8 @@ import os
 import logging
 from pyresparser import ResumeParser
 import pdfplumber
-from utils.exceptions import ResumeParsingError, InvalidFileFormatError
-from utils.logging_config import setup_logging
+from src.utils.exceptions import ResumeParsingError, InvalidFileFormatError
+from src.utils.logging_config import setup_logging
 
 setup_logging() # only configures once per process
 
