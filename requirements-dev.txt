@@ -1,0 +1,5 @@
+nltk.download('stopwords')
+nltk.download('wordnet')         # Recommended, pyresparser uses this too
+nltk.download('omw-1.4')         # For lemmatizer
+nltk.download('punkt')           # For tokenization, if needed
+nltk.download('averaged_perceptron_tagger')  # For NER, if needed
